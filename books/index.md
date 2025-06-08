@@ -3,32 +3,92 @@ layout: default
 title: Books
 ---
 
-<a href="https://anish6641.github.io/" style="text-decoration: none;">← Back to Home</a>
+<a href="https://cultural-catalog.github.io/" style="text-decoration: none;">← Back to Home</a>
 
 <style>
 .badge-link {
-  font-size: 1.2rem;
-  display: inline-block;
-  margin: 2px;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 2px;
 }
 
 .badge-link img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-  height: 38px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    height: 38px;
 }
 
 .badge-link:hover img {
-  transform: scale(1.1);
-  filter: brightness(1.2);
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
-.book-list { display: flex; flex-wrap: wrap; gap: 20px; }
-.book { width: 320px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.book img { max-width: 100%; height: auto; }
-.book p { font-size: 14px; margin: 10px 0; color: #333; }
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .book-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .book {
+        width: 100%;
+    }
+
+    .badge-link img {
+        height: 32px;
+    }
+
+    .book p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) {
+    .book-list {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .book {
+        width: calc(33.333% - 20px);
+    }
+
+    .badge-link img {
+        height: 38px;
+    }
+
+    .book p {
+        font-size: 14px;
+    }
+}
 </style>
 
-## Book Recommendations
+## Books
 
 <div class="book-list">
     <div class="book">

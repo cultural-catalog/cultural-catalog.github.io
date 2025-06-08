@@ -3,32 +3,92 @@ layout: default
 title: Western Movies
 ---
 
-<a href="https://anish6641.github.io/" style="text-decoration: none;">← Back to Home</a>
+<a href="https://cultural-catalog.github.io/" style="text-decoration: none;">← Back to Home</a>
 
 <style>
 .badge-link {
-  font-size: 1.2rem;
-  display: inline-block;
-  margin: 2px;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 2px;
 }
 
 .badge-link img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-  height: 38px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    height: 38px;
 }
 
 .badge-link:hover img {
-  transform: scale(1.1);
-  filter: brightness(1.2);
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
-.movie-list { display: flex; flex-wrap: wrap; gap: 20px; }
-.movie { width: 300px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.movie img { max-width: 100%; height: auto; }
-.movie p { font-size: 14px; margin: 10px 0; color: #333; }
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .movie-list {
+        gap: 10px;
+    }
+
+    .movie {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .badge-link img {
+        height: 30px;
+    }
+
+    .movie p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .movie {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .badge-link img {
+        height: 25px;
+    }
+
+    .movie p {
+        font-size: 11px;
+    }
+}
 </style>
 
-## ⭐ Recommended
+## Movies
 
 <div class="movie-list">
     <div class="movie">
